@@ -1,0 +1,6 @@
+{% if post.published_date %}
+  {% assign published_date = post.date %}
+{% elsif page.published_date %}
+  {% assign published_date = page.date %}
+{% endif %}
+{{ published_date | date: "%B %d, %Y" }}
