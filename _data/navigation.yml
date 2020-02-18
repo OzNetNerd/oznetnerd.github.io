@@ -1,5 +1,7 @@
 # main links
 main:
+  - title: "Subscribe"
+    url: /subscribe/
   - title: "Categories"
     url: /categories/
   - title: "Archive"

@@ -105,12 +105,9 @@ analytics:
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/WillRobinson.jpg"
-  bio              : "A sales engineer who can't stop talking about cloud, automation and security"
+  bio              : "A sales engineer who loves talking about cloud, automation and cybersecurity"
 #  location         : "Melbourne, Australia"
   links:
-#    - label: "OzNetNerd.com"
-#      icon: "fas fa-fw fa-link"
-#      url: "https://oznetnerd.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/OzNetNerd"
@@ -120,10 +117,9 @@ author:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/OzNetNerd"
-#    - label: "Instagram"
-#      icon: "fab fa-fw fa-instagram"
-#      url: "https://instagram.com/OzNetNerd"
-
+    - label: "Subscribe"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "https://oznetnerd.com/subscribe/"
 
 # Site Footer
 footer:
@@ -137,10 +133,9 @@ footer:
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/OzNetNerd"
-#    - label: "Instagram"
-#      icon: "fab fa-fw fa-instagram"
-#      url: "https://instagram.com/OzNetNerd"
-
+    - label: "Subscribe"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "https://oznetnerd.com/subscribe/"
 
 # Reading Files
 include:
