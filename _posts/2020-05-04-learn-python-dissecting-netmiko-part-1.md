@@ -54,7 +54,7 @@ from netmiko.ssh_dispatcher import ConnectHandler
 __ProTip:__ Importing modules using `__init__.py` enables you to write cleaner code.
 {: .notice--info}
 
-After having reviewed `__init__.py`, we now know that `ConnectHandler` actually resides in the [`ssh_dispatcher.py` file](https://github.com/ktbyers/netmiko/blob/211fd9da18b49acd65f390f722a460b55bc672e2/netmiko/ssh_dispatcher.py#L257-L265). 
+After having reviewed `__init__.py`, we now know that `ConnectHandler` actually resides in the [`ssh_dispatcher.py` file](https://github.com/ktbyers/netmiko/blob/211fd9da18b49acd65f390f722a460b55bc672e2/netmiko/ssh_dispatcher.py#L257-L265):
 
 ```
 def ConnectHandler(*args, **kwargs):
@@ -68,11 +68,15 @@ def ConnectHandler(*args, **kwargs):
     return ConnectionClass(*args, **kwargs)
 ```
 
-It's easy to get discouraged when you see the amount of code in `ssh_dispatcher.py`, but don't worry. It's actually very straight forward as you'll see in a moment.
+It's easy to get discouraged when you see the amount of code in `ssh_dispatcher.py`, but don't worry. It's actually very straight forward as you'll see in a in this series of posts.
 
 ## Understanding ConnectHandler
 
-Now that we've found the [`ConnectHandler` function](https://github.com/ktbyers/netmiko/blob/211fd9da18b49acd65f390f722a460b55bc672e2/netmiko/ssh_dispatcher.py#L257), let's get to work analysing it. The first thing we see is it's docstring: *__Factory function__ selects the proper __class__ and creates object based on __device_type__.* Let's take a look at what all of this means.
+Now that we've found the [`ConnectHandler` function](https://github.com/ktbyers/netmiko/blob/211fd9da18b49acd65f390f722a460b55bc672e2/netmiko/ssh_dispatcher.py#L257), let's get to work analysing it. The first thing we see is it's docstring: 
+
+*__Factory function__ selects the proper __class__ and creates object based on __device_type__.* 
+
+Let's take a look at what all of this means.
 
 ### Factory Functions
 
