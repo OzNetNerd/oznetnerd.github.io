@@ -128,7 +128,7 @@ ConnectHandler(*args, **kwargs)
 
 In a nutshell, `ConnectHandler` doesn't need to take into account the unique parameters of every type of router, switch, firewall, Linux server or any other device Netmiko connects to now or will connect to in the future. By using `*args` and `**kwargs`, we're able to cater for every single one of them without needing modify the code.  
 
-## To be continued...
+## Review
 
 To avoid information overload, I'll end this post here. Before I do though, let's quickly review what we've learned.
 
