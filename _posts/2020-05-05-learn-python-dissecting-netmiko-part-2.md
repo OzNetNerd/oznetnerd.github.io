@@ -23,7 +23,7 @@ This is the second post in this series. If you missed Part 1, [you can find it h
 
 Let's continue our `ConnectHandler` investigation. When we [look at the code](https://github.com/ktbyers/netmiko/blob/211fd9da18b49acd65f390f722a460b55bc672e2/netmiko/ssh_dispatcher.py#L259-L263), the first thing we  `if` statement:
 
-```
+``` python
 if kwargs["device_type"] not in platforms:
     raise ValueError(
         "Unsupported device_type: "
@@ -37,7 +37,7 @@ But what happens if we provide an invalid `device_type`? Judging by the code, Ne
 
 Here's our code:
 
-```
+``` python
 from netmiko import ConnectHandler
 
 linux = {
@@ -51,7 +51,7 @@ ConnectHandler(**linux)
 
 And here's our output:
 
-```
+``` python
 Traceback (most recent call last):
   File "/home/wrobinson/Development/netmiko-blog/run.py", line 9, in <module>
     ConnectHandler(**linux)
@@ -80,7 +80,7 @@ Great! The code worked as expected. Before we move on though, what do you think 
 
 Here's our code:
 
-```
+``` python
 from netmiko import ConnectHandler
 
 linux = {
@@ -93,7 +93,7 @@ ConnectHandler(**linux)
 
 And here's our output:
 
-```
+``` python
 Traceback (most recent call last):
   File "/home/wrobinson/Development/netmiko-blog/run.py", line 9, in <module>
     ConnectHandler(**linux)
@@ -110,7 +110,7 @@ Now, this error message isn't very user friendly. What can we do to clean it up?
 
 Here's our code:
 
-```
+``` python
 from netmiko import ConnectHandler
 import sys
 
@@ -128,7 +128,7 @@ except KeyError:
 
 And here's our output:
 
-```
+``` python
 Error: "device_type" must be passed to ConnectHandler
 
 Process finished with exit code 1

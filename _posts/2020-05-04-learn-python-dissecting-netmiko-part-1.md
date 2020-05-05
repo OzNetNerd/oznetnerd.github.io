@@ -28,7 +28,7 @@ __The best way to learn how to code is by reading someone else's code.__ So with
 
 Netmiko's README provides us with a ["Getting Started"](https://github.com/ktbyers/netmiko#getting-started) snippet:
 
-```
+``` python
 from netmiko import ConnectHandler
 
 cisco_881 = {
@@ -47,7 +47,7 @@ This gives us our starting point. In order to understand how Netmiko works, we n
 
 When we look at the [netmiko package](https://github.com/ktbyers/netmiko/tree/211fd9da18b49acd65f390f722a460b55bc672e2/netmiko), the function is nowhere to be found. That's because it's actually "hiding" in the [`__init__.py` file](https://github.com/ktbyers/netmiko/blob/211fd9da18b49acd65f390f722a460b55bc672e2/netmiko/__init__.py#L7):
 
-```
+``` python
 from netmiko.ssh_dispatcher import ConnectHandler
 ```
 
@@ -56,7 +56,7 @@ __ProTip:__ Importing modules using `__init__.py` enables you to write cleaner c
 
 After having reviewed `__init__.py`, we now know that `ConnectHandler` actually resides in the [`ssh_dispatcher.py` file](https://github.com/ktbyers/netmiko/blob/211fd9da18b49acd65f390f722a460b55bc672e2/netmiko/ssh_dispatcher.py#L257-L265):
 
-```
+``` python
 def ConnectHandler(*args, **kwargs):
     """Factory function selects the proper class and creates object based on device_type."""
     if kwargs["device_type"] not in platforms:
@@ -90,7 +90,7 @@ Don't worry if that doesn't make sense. It will soon.
 
 Next, we have __class__. This likely has something to do with the classes [being imported at the top](https://github.com/ktbyers/netmiko/blob/211fd9da18b49acd65f390f722a460b55bc672e2/netmiko/ssh_dispatcher.py#L2-L83) of `ssh_dispatcher.py`:
 
-```
+``` python
 """Controls selection of proper class based on the device type."""
 from netmiko.a10 import A10SSH
 from netmiko.accedian import AccedianSSH
@@ -120,7 +120,7 @@ Finally, we have __device_type__. Looking at the "Getting Started" snippet, we c
 
 OK, now that we understand the docstring, let's talk about the `ConnectHandler`'s signature:
 
-```
+``` python
 ConnectHandler(*args, **kwargs)
 ```
 
@@ -137,3 +137,5 @@ To avoid information overload, I'll end this post here. Before I do though, let'
 3. By accepting `*args` and `**kwargs` arguments, `ConnectHandler` is able to cater for every type of platforms
 
 In the next post, we'll dive a lot deeper into the code and analyse every aspect of the `ConnectHandler` function.
+
+Update: [Part 2](/2020/05/05/learn-python-dissecting-netmiko-part-2/) has been published.
