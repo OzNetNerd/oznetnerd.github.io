@@ -15,6 +15,7 @@ tags:
 - Python
 - Netmiko
 - Network Automation
+
 ---
 
 In the not too distant past, I was a network engineer. In fact, it's my interest in network automation that led me to DevOps, but I digress. During my network engineering days, my favourite tools were Ansible and [Netmiko](https://github.com/ktbyers/netmiko). Given how heavily I used Netmiko, I really wanted to give back to the project and the community. There was one "slight" problem though. My coding skills weren't great. 
