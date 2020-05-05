@@ -23,13 +23,13 @@ This is the second post in this series. If you missed Part 1, [you can find it h
 
 Let's continue our `ConnectHandler` investigation. When we [look at the code](https://github.com/ktbyers/netmiko/blob/211fd9da18b49acd65f390f722a460b55bc672e2/netmiko/ssh_dispatcher.py#L259-L263), the first thing we  `if` statement:
 
-``` python
+{% highlight python linenos %}
 if kwargs["device_type"] not in platforms:
     raise ValueError(
         "Unsupported device_type: "
         "currently supported platforms are: {}".format(platforms_str)
     )
-```
+{% endhighlight %}
 
 The `if` statement tells us that we're looking for the `device_type` key in the `kwargs` dictionary. Once we find it, we then check if it exists in `platforms`.
 
@@ -37,7 +37,7 @@ But what happens if we provide an invalid `device_type`? Judging by the code, Ne
 
 Here's our code:
 
-``` python
+{% highlight python linenos %}
 from netmiko import ConnectHandler
 
 linux = {
@@ -47,11 +47,11 @@ linux = {
 }
 
 ConnectHandler(**linux)
-```
+{% endhighlight %}
 
 And here's our output:
 
-``` python
+{% highlight python linenos %}
 Traceback (most recent call last):
   File "/home/wrobinson/Development/netmiko-blog/run.py", line 9, in <module>
     ConnectHandler(**linux)
@@ -74,13 +74,13 @@ brocade_nos
 # and so on...
 
 Process finished with exit code 1
-```
+{% endhighlight %}
 
 Great! The code worked as expected. Before we move on though, what do you think will happen if we don't pass in a `device_type` at all? Let's have a look.
 
 Here's our code:
 
-``` python
+{% highlight python linenos %}
 from netmiko import ConnectHandler
 
 linux = {
@@ -89,11 +89,11 @@ linux = {
 }
 
 ConnectHandler(**linux)
-```
+{% endhighlight %}
 
 And here's our output:
 
-``` python
+{% highlight python linenos %}
 Traceback (most recent call last):
   File "/home/wrobinson/Development/netmiko-blog/run.py", line 9, in <module>
     ConnectHandler(**linux)
@@ -102,7 +102,7 @@ Traceback (most recent call last):
 KeyError: 'device_type'
 
 Process finished with exit code 1
-```
+{% endhighlight %}
 
 This time we get a `KeyError` exception. That's because Netmiko is referencing a key (`device_type`) that doesn't exist in our dictionary (`kwargs`). 
 
@@ -110,7 +110,7 @@ Now, this error message isn't very user friendly. What can we do to clean it up?
 
 Here's our code:
 
-``` python
+{% highlight python linenos %}
 from netmiko import ConnectHandler
 import sys
 
@@ -124,15 +124,15 @@ try:
 
 except KeyError:
     sys.exit('Error: "device_type" must be passed to ConnectHandler')
-```
+{% endhighlight %}
 
 And here's our output:
 
-``` python
+{% highlight python linenos %}
 Error: "device_type" must be passed to ConnectHandler
 
 Process finished with exit code 1
-```
+{% endhighlight %}
 
 Excellent! That's much nicer, isn't it?
 
