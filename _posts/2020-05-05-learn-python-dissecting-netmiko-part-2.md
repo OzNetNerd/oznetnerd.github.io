@@ -55,7 +55,7 @@ And here's our output:
 Traceback (most recent call last):
   File "/home/wrobinson/Development/netmiko-blog/run.py", line 9, in <module>
     ConnectHandler(**linux)
-  File "/home/wrobinson/Development/netmiko-blog/netmiko/netmiko/ssh_dispatcher.py", line 262, in ConnectHandler
+  File "/home/wrobinson/Development/netmiko-blog/netmiko/ssh_dispatcher.py", line 262, in ConnectHandler
     "currently supported platforms are: {}".format(platforms_str)
 ValueError: Unsupported device_type: currently supported platforms are: 
 a10
@@ -97,7 +97,7 @@ And here's our output:
 Traceback (most recent call last):
   File "/home/wrobinson/Development/netmiko-blog/run.py", line 9, in <module>
     ConnectHandler(**linux)
-  File "/home/wrobinson/Development/netmiko-blog/netmiko/netmiko/ssh_dispatcher.py", line 259, in ConnectHandler
+  File "/home/wrobinson/Development/netmiko-blog/netmiko/ssh_dispatcher.py", line 259, in ConnectHandler
     if kwargs["device_type"] not in platforms:
 KeyError: 'device_type'
 
@@ -151,4 +151,4 @@ Before we wrap up, let's first review what we've learned in this post:
 * We can "catch" exceptions using `try/except` blocks
   * After catching an exception, we can control what happens next
 * Trying to access a non-existant dictionary key (e.g `kwargs["invalid_key"]`) results in a `KeyError` exception being raised
-  * *Bonus points:* If you want to return a default value when a key doesn't exist, you could use `get` instead. e.g `kwargs.get("device_type", "linux")`. Using this method, `linux` will be returned and a `KeyError` exception will not be raised
+  * *Bonus points:* If you want to return a default value when a key doesn't exist, you could use `get` instead. e.g `kwargs.get("device_type", "linux")`. Using this method, `linux` will be returned instead of a `KeyError` exception being raised
