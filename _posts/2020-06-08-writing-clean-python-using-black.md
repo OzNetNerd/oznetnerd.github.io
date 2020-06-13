@@ -1,5 +1,5 @@
 ---
-title: "Writing clean, maintainable Python using Black"
+title: "Writing clean Python using Black"
 sub_heading: "The value of consistent code styling cannot be overstated"
 redirect_from: /2020/06/08/writing-clean-code-part-1/
 

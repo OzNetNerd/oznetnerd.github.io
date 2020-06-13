@@ -152,3 +152,5 @@ Before we wrap up, let's first review what we've learned in this post:
   * After catching an exception, we can control what happens next
 * Trying to access a non-existant dictionary key (e.g `kwargs["invalid_key"]`) results in a `KeyError` exception being raised
   * *Bonus points:* If you want to return a default value when a key doesn't exist, you could use `get` instead. e.g `kwargs.get("device_type", "linux")`. Using this method, `linux` will be returned instead of a `KeyError` exception being raised
+  
+__Update:__ [Part 3](/2020/06/14/learn-python-dissecting-netmiko-part-3/) has been published.
