@@ -1,6 +1,7 @@
 ---
-title: "Writing clean, maintainable Python - Part 1"
-sub_heading: "An easy to follow guide to setting up: Pre-commit Git hooks, Black, PyTest, Coverage & GitHub Actions"
+title: "Writing clean, maintainable Python using Black"
+sub_heading: "The value of consistent code styling cannot be overstated"
+redirect_from: /2020/06/08/writing-clean-code-part-1/
 
 # header:
 #   overlay_image: /assets/images/unsplash-image-1.jpg
