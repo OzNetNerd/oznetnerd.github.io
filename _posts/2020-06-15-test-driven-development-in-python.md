@@ -116,3 +116,5 @@ We can now get to work fixing it. Once done, we can re-run our tests. If we get 
 Applications grow and evolves over time. As they do, it is inevitable that the number of bugs we create increases. Furthermore, if we're refactoring our code in order to reduce technical debt, we've got yet another avenue for bugs to sneak in. 
 
 TDD is fantastic approach to ensuring things work the same way before and after changes are made. It's automated approach to testing means that we can use it on all of our projects, no matter how large they are. 
+
+**Update:** The next post in this series has been published: [Taking pytest for a test drive](/2020/06/16/taking-pytest-for-a-test-drive/)

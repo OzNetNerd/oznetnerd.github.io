@@ -15,9 +15,9 @@ tags:
 - Python
 ---
 
- In the [previous post](/2020/06/15/test-driven-development-in-python/) we got a glimpse of pytest. In this post, we'll be diving a little deeper. To do this, we'll be build a basic Flask app.
+In the [previous post](/2020/06/15/test-driven-development-in-python/) we got a glimpse of pytest. In this post, we'll be diving a little deeper. To do this, we'll be build a basic Flask app.
  
- Before we start coding though, let's first set up our directory structure. Thankfully, pytest gives us a few examples in their [Directory Structure](https://docs.pytest.org/en/reorganize-docs/new-docs/user/directory_structure.html)  and [Good Practices](https://docs.pytest.org/en/latest/goodpractices.html) pages. For the purposes of this post, we'll use this structure:
+Before we start coding though, let's first set up our directory structure. Thankfully, pytest gives us a few examples in their [Directory Structure](https://docs.pytest.org/en/reorganize-docs/new-docs/user/directory_structure.html)  and [Good Practices](https://docs.pytest.org/en/latest/goodpractices.html) pages. For the purposes of this post, we'll use this structure:
  
  ```
 .
@@ -82,8 +82,7 @@ def index():
 To make sure our app works, let's run the following commands:
 
 ```
-FLASK_APP=src/app.py
-flask run
+FLASK_APP=src/app.py flask run
 ```
 
 When we browse to `127.0.0.1:5000`, we see an "OK" message returned. Great, it works!
@@ -121,11 +120,11 @@ We've doing a few things in this block of code, so let's pause for a moment and 
 
 In `app_test.py`, we add the following:
 
-```
+{% highlight python linenos %}
 def test_index(client):
     r = client.get('/')
     assert r.status == '200 OK'
-```
+{% endhighlight %}
 
 As you can see, we've passed the `client` fixture to our `test_index` test. We're then using the client's `get` method to call our `/` route. This results in a [response_class](https://flask.palletsprojects.com/en/1.1.x/api/#response-objects) object being returned. We then `assert` that the [status](https://flask.palletsprojects.com/en/1.1.x/api/#flask.Response.status) of the response to make sure it's `200 OK`.
 
