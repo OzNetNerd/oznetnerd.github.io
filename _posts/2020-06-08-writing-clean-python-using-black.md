@@ -153,3 +153,5 @@ line-length = 120
 While pre-commit hooks are a great "last line of defence", I'm not a fan of the two commit process we saw above. Furthermore, I also prefer immediate feedback. If you feel the same, then I highly recommend setting up an [IDE integration](https://black.readthedocs.io/en/stable/editor_integration.html).
 
 As a PyCharm user, all I need to do is press `Control` + `S` and the code is updated right in front of my eyes.
+
+**Update:** The next post in this series has been published: [Test Driven Development (TDD) in Python](/2020/06/15/test-driven-development-in-python/)

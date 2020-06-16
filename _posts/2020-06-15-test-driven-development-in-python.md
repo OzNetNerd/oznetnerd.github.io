@@ -21,10 +21,10 @@ TDD is a development methodology. Before writing a new function or method, a dev
 
 As the code does not yet exist, the test will of course fail the first time it is run. The dev then gets to work writing the code. Once they're done, they re-run the test. If the test passes, they get rest assured their code works as expected.
 
-**Note:** There are numerous test frameworks in Python. PyTest is one of the most popular options and is used in this post.
+**Note:** There are numerous test frameworks in Python. pytest is one of the most popular options and is used in this post.
 {: .notice}
 
-## TDD with PyTest
+## TDD with pytest
 
 Let's look at a basic example. Let's say we want to write a function which takes two integers as parameters, and adds them together. 
 
@@ -44,7 +44,7 @@ def add_nums(num1, num2):
     return total
 {% endhighlight %}    
 
-Now we run PyTest to ensure the code is sound:
+Now we run pytest to ensure the code is sound:
 
 ```
 ============================= test session starts =============================
