@@ -9,11 +9,14 @@ sub_heading: "The best way to learn how to code is by reading someone else's cod
 categories:
 - DevOps
 - Python
+- NetOps
+- Network Automation
 
 tags:
 - DevOps
 - Python
 - Netmiko
+- NetOps
 - Network Automation
 ---
 

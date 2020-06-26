@@ -13,15 +13,16 @@ categories:
 tags:
 - DevOps
 - Python
+- TDD
 ---
 
-[Test Driven Development (TDD) in Python](https://oznetnerd.com/2020/06/15/test-driven-development-in-python/) touched on TDD and pytest. Then in [Taking pytest for a test drive](https://oznetnerd.com/2020/06/16/taking-pytest-for-a-test-drive/) we dived deeper on both subjects. 
+[Test Driven Development (TDD) in Python](/2020/06/15/test-driven-development-in-python/) touched on TDD and pytest. Then in [Taking pytest for a test drive](/2020/06/16/taking-pytest-for-a-test-drive/) we dived deeper on both subjects. 
 
 Now that we've got those two covered off, it's time to talk about [pytest-cov](https://github.com/pytest-dev/pytest-cov). In a nutshell, pytest-cov tells us how much of our code base is covered by our tests. This is useful because as our project grows, we're able to maintain/enforce a minimum amount of coverage. 
 
 ## Installation
 
-We'll use the same directory structure as [last time](https://oznetnerd.com/2020/06/15/test-driven-development-in-python/). Next, we need to set up our `requirements-dev.txt` file:
+We'll use the same directory structure as [last time](/2020/06/15/test-driven-development-in-python/). Next, we need to set up our `requirements-dev.txt` file:
 
 ```
 pytest

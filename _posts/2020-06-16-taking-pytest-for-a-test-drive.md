@@ -13,6 +13,7 @@ categories:
 tags:
 - DevOps
 - Python
+- TDD
 ---
 
 In the [previous post](/2020/06/15/test-driven-development-in-python/) we got a glimpse of pytest. In this post, we'll be diving a little deeper. To do this, we'll be build a basic Flask app.
