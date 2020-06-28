@@ -9,6 +9,8 @@ redirect_from: /kubernetes-from-the-ground-up-choosing-a-configuration-method/
 
 categories:
 - Kubernetes
+- DevOps
+- Docker
 
 tags:
 - DevOps

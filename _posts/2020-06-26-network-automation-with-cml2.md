@@ -9,10 +9,13 @@ sub_heading: "Setting up your environment"
 categories:
 - NetOps
 - Cisco
+- Python
+- Netmiko
 - Network Automation
 
 tags:
 - NetOps
+- Cisco
 - Python
 - Netmiko
 - Network Automation
@@ -136,3 +139,5 @@ For easy reference, here are the details you'll need once your environment is up
 ## Closing thoughts
 
 And there you have it! You're CML2 environment is set up and ready to go. In my next post I'll dive deeper on network automation.
+
+**Update:** The next post, [Multithreading with Python and Netmiko](/2020-06-28-multithreading-with-python-netmiko/), has been published.

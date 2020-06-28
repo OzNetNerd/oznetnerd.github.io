@@ -9,6 +9,8 @@ redirect_from: /kubernetes-from-the-ground-up-server-components/
 
 categories:
 - Kubernetes
+- DevOps
+- Docker
 
 tags:
 - DevOps
