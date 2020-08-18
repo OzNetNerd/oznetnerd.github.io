@@ -10,12 +10,14 @@ redirect_from: /python-demystifying-aws-boto3/
 categories:
 - Python
 - Boto3
+- DevOps
+- AWS
 
 tags:
 - Python
 - AWS
 - Amazon
-- IAC
+- IaC
 - Boto3
 - DevOps
 ---

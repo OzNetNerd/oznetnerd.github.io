@@ -9,6 +9,7 @@ redirect_from: /getting-started-with-git/
 
 categories:
 - Git
+- DevOps
 
 tags:
 - git
