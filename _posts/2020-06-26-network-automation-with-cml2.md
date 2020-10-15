@@ -84,7 +84,7 @@ Our automation techniques are covered by the "etc". Paramiko, Netmiko, Ansible, 
 
 ## Automation example
 
-Now for the moment we've all been waiting for! Let's see if we can access our CML2 environment programatically:
+Now for the moment we've all been waiting for! Let's see if we can access our CML2 environment programmatically:
 
 {% highlight python linenos %}
 from netmiko import ConnectHandler
@@ -140,4 +140,4 @@ For easy reference, here are the details you'll need once your environment is up
 
 And there you have it! You're CML2 environment is set up and ready to go. In my next post I'll dive deeper on network automation.
 
-**Update:** The next post, [Multithreading with Python and Netmiko](/2020-06-28-multithreading-with-python-netmiko/), has been published.
+**Update:** The next post, [Multithreading with Python and Netmiko](/2020/06/28/multithreading-with-python-netmiko/), has been published.
