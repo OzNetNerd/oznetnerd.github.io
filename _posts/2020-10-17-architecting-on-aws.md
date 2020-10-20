@@ -34,3 +34,7 @@ Along the way we'll encounter real world problems. We'll then implement best pra
 ## What's next?
 
 Stay tuned! The first post in the series will be posted soon. In the meantime, please set up an AWS account and [enable a billing alarm](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html). This will ensure your lab spending is kept to a reasonable level.
+
+## Posts in this series
+
+1. [Architecting on AWS: Infrastructure as Code (IAC)](/2020/10/20/architecting-on-aws-infrastructure-as-code/)

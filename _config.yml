@@ -105,7 +105,7 @@ analytics:
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "/assets/images/WillRobinson.jpg"
-  bio              : "A senior sales engineer & DevOps specialist who loves talking about cloud, automation and cybersecurity"
+  bio              : "Will is a senior sales engineer & DevOps specialist who loves talking about cloud, automation and cybersecurity"
 #  location         : "Melbourne, Australia"
   links:
     - label: "GitHub"
