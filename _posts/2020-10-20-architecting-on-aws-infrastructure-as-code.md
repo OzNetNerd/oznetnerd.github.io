@@ -109,3 +109,5 @@ As they say, no rest for the wicked! Our next task is in.
 The devs would like us to add a web server to the environment. Their app is written in Python and uses a web framework called Flask. They want us to spin up the server, install Python and Flask as well as allow incoming requests on TCP port 5000.
 
 Let's get to work!
+
+**Update:** The [next installment](/2020/10/21/architecting-on-aws-ec2/) has been posted.
