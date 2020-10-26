@@ -23,7 +23,7 @@ tags:
 
 _This post is a part of the "[Architecting on AWS](/2020/10/17/architecting-on-aws/)" series_
 
-Picking up from where we left of, the [the devs' requirements](/2020/10/20/architecting-on-aws-infrastructure-as-code/#whats-next) were as follows:
+Picking up from where we left off, the [the devs' requirements](/2020/10/20/architecting-on-aws-infrastructure-as-code/#whats-next) were as follows:
 
 1. They need a web server
 2. Python & Flask need to be installed on the web server
@@ -96,12 +96,12 @@ aws cloudformation create-stack \
 __Note:__ Replace `create-stack` with `update-stack` if you didn't delete the stack after completing the previous task.
 {: .notice--primary}
 
+__Note:__ The CloudFormation template provides two optional parameters. They can be used to lock down access to the EC2 instance as well as provide SSH access to it. See the [README](https://github.com/OzNetNerd/Architecting-on-AWS/tree/main/EC2_Website) for more information.
+{: .notice--info}
+
 Once our deployment completes, it will look like this:
 
 <p align="center"><img src="/assets/2020/10/ec2_website.svg" /></p>
-
-__Note:__ The CloudFormation template provides two optional parameters. They can be used to lock down access to the EC2 instance as well as provide SSH access to it. See the [README](https://github.com/OzNetNerd/Architecting-on-AWS/tree/main/EC2_Website) for more information.
-{: .notice--info}
 
 ## Testing
 
