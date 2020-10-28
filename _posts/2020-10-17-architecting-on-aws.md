@@ -39,3 +39,4 @@ Stay tuned! The first post in the series will be posted soon. In the meantime, p
 
 1. [Architecting on AWS: Infrastructure as Code (IAC)](/2020/10/20/architecting-on-aws-infrastructure-as-code/)
 2. [Architecting on AWS: EC2](/2020/10/21/architecting-on-aws-ec2/)
+3. [Architecting on AWS: ALB](/2020/10/26/architecting-on-aws-alb/)
