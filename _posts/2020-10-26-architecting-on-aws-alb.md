@@ -18,7 +18,7 @@ tags:
 - Certifications
 - IaC
 - Infrastructure as Code
-
+- Architecture
 ---
 
 _This post is a part of the "[Architecting on AWS](/2020/10/17/architecting-on-aws/)" series_

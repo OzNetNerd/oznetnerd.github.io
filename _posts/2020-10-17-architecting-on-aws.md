@@ -16,6 +16,7 @@ tags:
 - DevOps
 - AWS
 - Certifications
+- Architecture
 
 ---
 

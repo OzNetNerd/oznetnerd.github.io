@@ -18,6 +18,7 @@ tags:
 - Certifications
 - IaC
 - Infrastructure as Code
+- Architecture
 
 ---
 
