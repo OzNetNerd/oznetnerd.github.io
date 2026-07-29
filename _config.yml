@@ -24,7 +24,7 @@ masthead_title           : # overrides the website title displayed in the masthe
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : disqus # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "custom"
+  provider               : false # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "custom"
   disqus:
     shortname            : oznetnerd
   discourse:
@@ -203,7 +203,7 @@ defaults:
       author_profile: true
       read_time: false
       published_date: true
-      comments: true
+      comments: false
       share: true
       related: true
 #      toc: true
